@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+$container_width: 1166px;
+$button_gradient: linear-gradient(to bottom, #3bb96d, #279a59);
+
+@mixin btn_action {
+  transition: all 300ms ease;
+  &:active {
+    scale: 1.1;
+  }
+  &:hover {
+    opacity: 80%;
+  }
+}
+
+@mixin my_media($max_width) {
+  @media screen and (max-width: $max_width) {
+    @content;
+  }
+}
+
+// HEADER
+header {
+  padding: 21px 0 24px;
+  .container {
+    max-width: $container_width;
+    padding: 0 15px;
+    margin: 0 auto;
+    .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #686868;
+      font-weight: 500;
+      @include my_media(1130px) {
+        display: none;
+      }
+      .last {
+        font-size: 18px;
+      }
+      .contact-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        h5 {
+          font-weight: 500;
+          font-size: 22px;
+          color: #000000;
+        }
+        button {
+          width: 196px;
+          height: 36px;
+          border: none;
+          color: #ffffff;
+          cursor: pointer;
+          border-radius: 30px;
+          background: $button_gradient;
+          font-size: 14px;
+          @include btn_action();
+        }
+      }
+    }
+
+    .bottom {
+      margin-top: 23px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 34px;
+        @include my_media(1130px) {
+          display: none;
+        }
+        li {
+          font-size: 18px;
+          color: #0d233b;
+        }
+      }
+      .burger {
+        display: none;
+        @include my_media(1130px) {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// HERO SECTION
+.hero {
+  background: $button_gradient;
+  position: relative;
+  //   padding: 20px 0;
+  @include my_media(600px) {
+    padding: 50px 0 100px;
+  }
+  .container {
+    max-width: $container_width;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .left {
+      max-width: 504px;
+      @include my_media(600px) {
+        max-width: none;
+      }
+      h1 {
+        font-weight: 700;
+        font-size: 60px;
+        color: #ffffff;
+        line-height: 110.00000000000001%;
+        @include my_media(600px) {
+          font-size: 50px;
+        }
+      }
+      p {
+        line-height: 140%;
+        color: #ffffff;
+        max-width: 449px;
+        margin-top: 20px;
+      }
+      button {
+        width: 220px;
+        height: 48px;
+        border-radius: 30px;
+        background-color: #ffffff;
+        color: #3bb96d;
+        border: none;
+        margin-top: 30px;
+        cursor: pointer;
+        @include btn_action();
+      }
+    }
+    .right {
+      max-width: 580px;
+      height: 560px;
+      @include my_media(600px) {
+        display: none;
+        height: 527px;
+        width: 387px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .bottom {
+      img {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        @include my_media(600px) {
+          left: 20px;
+          bottom: 50px;
+          transform: translateX(0);
+        }
+      }
+    }
+  }
+}
