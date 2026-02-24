@@ -225,6 +225,11 @@ header .container .bottom .burger {
   max-width: 657px;
   height: 406px;
 }
+@media screen and (max-width: 460px) {
+  .about .container .right {
+    height: 268px;
+  }
+}
 .about .container .right img {
   width: 100%;
   height: 100%;
@@ -233,7 +238,6 @@ header .container .bottom .burger {
 }
 @media screen and (max-width: 460px) {
   .about .container .right img {
-    height: 268px;
     -o-object-fit: fill;
        object-fit: fill;
   }
