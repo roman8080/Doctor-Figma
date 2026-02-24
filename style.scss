@@ -8,6 +8,15 @@
 $container_width: 1166px;
 $button_gradient: linear-gradient(to bottom, #3bb96d, #279a59);
 
+@mixin btn_size {
+  width: 220px;
+  height: 48px;
+  border-radius: 30px;
+  border: none;
+  color: #ffffff;
+  background: $button_gradient;
+}
+
 @mixin btn_action {
   transition: all 300ms ease;
   &:active {
@@ -225,6 +234,92 @@ header {
         object-fit: cover;
         @include my_media(460px) {
           object-fit: fill;
+        }
+      }
+    }
+  }
+}
+
+// OUR JOB
+.our-job {
+  padding-bottom: 130px;
+  .container {
+    max-width: $container_width;
+    padding: 0 15px;
+    margin: 0 auto;
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h1 {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 140%;
+        color: #0d233b;
+        max-width: 344px;
+      }
+      .btn1 {
+        @include btn_size();
+        font-weight: 700;
+        font-size: 16px;
+        @include btn_action();
+        @include my_media(650px) {
+          display: none;
+        }
+      }
+    }
+    .bottom {
+      margin-top: 39px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @include my_media(820px) {
+        flex-wrap: wrap;
+      }
+      @include my_media($container_width) {
+        .btn2 {
+          display: none;
+        }
+      }
+      @include my_media(400px) {
+        .btn {
+          display: block;
+        }
+      }
+    }
+    .profession {
+      box-shadow: 0 4px 20px 0 #34343424;
+      @include my_media(820px) {
+        max-width: 608px;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      img {
+        @include my_media(820px) {
+          max-width: 344px;
+          height: auto;
+        }
+        @include my_media(390px) {
+          width: 388px;
+        }
+      }
+      .card {
+        padding: 20px;
+        h2 {
+          font-weight: 700;
+          font-size: 20px;
+          color: #0d233b;
+          line-height: 140%;
+        }
+        .card-div {
+          margin-top: 10px;
+          .link {
+            font-size: 16px;
+            color: #3bb96d;
+          }
         }
       }
     }
