@@ -259,14 +259,14 @@ header {
         color: #0d233b;
         max-width: 344px;
       }
-      .btn1 {
-        @include btn_size();
-        font-weight: 700;
-        font-size: 16px;
-        @include btn_action();
-        @include my_media(650px) {
-          display: none;
-        }
+    }
+    .btn1 {
+      @include btn_size();
+      font-weight: 700;
+      font-size: 16px;
+      @include btn_action();
+      @include my_media(650px) {
+        display: none;
       }
     }
     .bottom {
@@ -277,12 +277,15 @@ header {
       @include my_media(820px) {
         flex-wrap: wrap;
       }
+      @include my_media(440px) {
+        justify-content: center;
+      }
       @include my_media($container_width) {
         .btn2 {
           display: none;
         }
       }
-      @include my_media(400px) {
+      @include my_media(440px) {
         .btn {
           display: block;
         }
@@ -302,7 +305,7 @@ header {
           max-width: 344px;
           height: auto;
         }
-        @include my_media(390px) {
+        @include my_media(440px) {
           width: 388px;
         }
       }
@@ -321,6 +324,13 @@ header {
             color: #3bb96d;
           }
         }
+      }
+    }
+    .btn2 {
+      display: none;
+      margin-top: 20px;
+      @include my_media(420px) {
+        display: block;
       }
     }
   }

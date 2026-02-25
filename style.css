@@ -263,7 +263,7 @@ header .container .bottom .burger {
   color: #0d233b;
   max-width: 344px;
 }
-.our-job .container .top .btn1 {
+.our-job .container .btn1 {
   width: 220px;
   height: 48px;
   border-radius: 30px;
@@ -274,14 +274,14 @@ header .container .bottom .burger {
   font-size: 16px;
   transition: all 300ms ease;
 }
-.our-job .container .top .btn1:active {
+.our-job .container .btn1:active {
   scale: 1.1;
 }
-.our-job .container .top .btn1:hover {
+.our-job .container .btn1:hover {
   opacity: 80%;
 }
 @media screen and (max-width: 650px) {
-  .our-job .container .top .btn1 {
+  .our-job .container .btn1 {
     display: none;
   }
 }
@@ -296,12 +296,17 @@ header .container .bottom .burger {
     flex-wrap: wrap;
   }
 }
+@media screen and (max-width: 440px) {
+  .our-job .container .bottom {
+    justify-content: center;
+  }
+}
 @media screen and (max-width: 1166px) {
   .our-job .container .bottom .btn2 {
     display: none;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 440px) {
   .our-job .container .bottom .btn {
     display: block;
   }
@@ -324,7 +329,7 @@ header .container .bottom .burger {
     height: auto;
   }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 440px) {
   .our-job .container .profession img {
     width: 388px;
   }
@@ -344,4 +349,13 @@ header .container .bottom .burger {
 .our-job .container .profession .card .card-div .link {
   font-size: 16px;
   color: #3bb96d;
+}
+.our-job .container .btn2 {
+  display: none;
+  margin-top: 20px;
+}
+@media screen and (max-width: 420px) {
+  .our-job .container .btn2 {
+    display: block;
+  }
 }/*# sourceMappingURL=style.css.map */
