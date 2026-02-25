@@ -354,6 +354,9 @@ header {
         color: #000000;
       }
       .btns {
+        @include my_media(430px) {
+          display: none;
+        }
         .btn1 {
           width: 30px;
           height: 30px;
