@@ -813,4 +813,59 @@ header .container .bottom .burger {
   .stat .container .bottom .right .btn2 {
     display: block;
   }
+}
+
+.our-equipment {
+  padding: 130px 0;
+}
+.our-equipment .container {
+  max-width: 1166px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.our-equipment .container .top h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #000000;
+}
+.our-equipment .container .cards {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1150px) {
+  .our-equipment .container .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 398px) {
+  .our-equipment .container .cards {
+    width: 388px;
+    height: 2028px;
+  }
+}
+.our-equipment .container .cards .left {
+  width: 367px;
+  height: 540px;
+  border-radius: 60px;
+  margin-top: 112px;
+  background-color: #f4f6fa;
+}
+.our-equipment .container .cards .left h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #0d233b;
+  padding: 0 30px 0;
+}
+.our-equipment .container .cards .left .logos {
+  display: flex;
+  gap: 5px;
+  margin-top: 15px;
+  padding: 0 30px 0;
+}
+.our-equipment .container .cards .left .logos p {
+  font-size: 18px;
+  line-height: 140%;
+  color: #686868;
+  margin-left: 5px;
 }/*# sourceMappingURL=style.css.map */
