@@ -335,3 +335,122 @@ header {
     }
   }
 }
+
+// OUR SPECIALISTS
+.our-specialists {
+  background-color: #f1f5f8;
+  padding: 130px 0;
+  .container {
+    max-width: $container_width;
+    padding: 0 15px;
+    margin: 0 auto;
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+      h1 {
+        font-weight: 700;
+        font-size: 40px;
+        color: #000000;
+      }
+      .btns {
+        .btn1 {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          border: 1px solid #3bb96d;
+          background-color: #f1f5f8;
+          color: #3bb96d;
+          cursor: pointer;
+          @include btn_action();
+        }
+        .btn2 {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          border: none;
+          background-color: #3bb96d;
+          color: #ffffff;
+          cursor: pointer;
+          @include btn_action();
+        }
+      }
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 20px;
+
+      @include my_media(1000px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      @include my_media(720px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include my_media(515px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      .middle {
+        // max-width: 270px;
+        // height: 405px;
+        margin-top: 40px;
+        img {
+          width: 100%;
+        }
+        h3 {
+          font-size: 20px;
+          font-weight: 700;
+          color: #0d233b;
+          margin-top: 20px;
+        }
+        p {
+          font-size: 18px;
+          font-weight: 300;
+          color: #0d233b;
+          margin-top: 10px;
+        }
+        button {
+          @include btn_size();
+          font-size: 16px;
+          font-weight: 700;
+          margin-top: 20px;
+          cursor: pointer;
+          @include btn_action();
+        }
+      }
+    }
+
+    .bottom {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 50px;
+      cursor: pointer;
+      @include btn_action();
+
+      button {
+        width: 220px;
+        height: 48px;
+        border-radius: 30px;
+        background-color: #f1f5f8;
+        color: #3bb96d;
+        font-size: 16px;
+        font-weight: 700;
+        border: 1px solid #3bb96d;
+        @include my_media(430px) {
+          margin-right: 180px;
+        }
+      }
+    }
+  }
+}
