@@ -678,4 +678,135 @@ header .container .bottom .burger {
 }
 .our-discount .container .middle .right .item4 {
   background-color: #27c8da;
+}
+
+.stat {
+  background-color: #f1f5f8;
+  padding: 130px 0;
+}
+.stat .container {
+  max-width: 1166px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.stat .container .top h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #000000;
+}
+.stat .container .middle .cards {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1141px;
+  margin-top: 40px;
+}
+@media screen and (max-width: 730px) {
+  .stat .container .middle .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.stat .container .middle .cards .tag1 {
+  background: linear-gradient(to bottom, #27c8da, #24bfd0);
+  width: 367px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-radius: 5px;
+}
+.stat .container .middle .cards .tag1 .logo {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 65px;
+  border-radius: 50%;
+  border: none;
+}
+.stat .container .middle .cards .tag1 h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 140%;
+  color: #ffffff;
+  margin-left: 20px;
+}
+.stat .container .middle .cards .tag2 .logo {
+  width: 70px;
+}
+.stat .container .middle .cards .tag3 .logo {
+  width: 70px;
+}
+.stat .container .bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+@media screen and (max-width: 730px) {
+  .stat .container .bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+.stat .container .bottom .left {
+  max-width: 463px;
+}
+.stat .container .bottom .left p {
+  line-height: 140%;
+  color: #686868;
+}
+@media screen and (max-width: 1170px) {
+  .stat .container .bottom .left p {
+    width: 343px;
+  }
+}
+.stat .container .bottom .left .btn1 {
+  width: 220px;
+  height: 48px;
+  border-radius: 30px;
+  border: none;
+  color: #ffffff;
+  margin-top: 28px;
+  background: linear-gradient(to bottom, #3bb96d, #279a59);
+}
+@media screen and (max-width: 730px) {
+  .stat .container .bottom .left .btn1 {
+    display: none;
+  }
+}
+@media screen and (max-width: 1170px) {
+  .stat .container .bottom .right img {
+    display: none;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .stat .container .bottom .right .img2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 1170px) {
+  .stat .container .bottom .right .img2 {
+    display: block;
+  }
+}
+.stat .container .bottom .right .btn2 {
+  width: 220px;
+  height: 48px;
+  border-radius: 30px;
+  border: none;
+  color: #ffffff;
+  margin-top: 28px;
+  background: linear-gradient(to bottom, #3bb96d, #279a59);
+}
+@media screen and (max-width: 1440px) {
+  .stat .container .bottom .right .btn2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 1440px) and (max-width: 730px) {
+  .stat .container .bottom .right .btn2 {
+    display: block;
+  }
 }/*# sourceMappingURL=style.css.map */
