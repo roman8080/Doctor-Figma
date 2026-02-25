@@ -597,6 +597,12 @@ header .container .bottom .burger {
   right: 0;
   bottom: 0;
 }
+@media screen and (max-width: 550px) {
+  .our-discount .container .middle .left img {
+    width: 255px;
+    height: 242px;
+  }
+}
 .our-discount .container .middle .right {
   max-width: 560px;
   width: 100%;

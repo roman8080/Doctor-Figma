@@ -533,6 +533,10 @@ header {
           position: absolute;
           right: 0;
           bottom: 0;
+          @include my_media(550px) {
+            width: 255px;
+            height: 242px;
+          }
         }
       }
       .right {
