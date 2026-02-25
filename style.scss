@@ -710,6 +710,8 @@ header {
           border-radius: 30px;
           border: none;
           color: #ffffff;
+          font-weight: 700;
+          font-size: 16px;
           margin-top: 28px;
           background: $button_gradient;
           @include my_media(730px) {
@@ -737,6 +739,8 @@ header {
           border-radius: 30px;
           border: none;
           color: #ffffff;
+          font-weight: 700;
+          font-size: 16px;
           margin-top: 28px;
           background: $button_gradient;
           @include my_media(1440px) {
