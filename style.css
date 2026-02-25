@@ -552,6 +552,7 @@ header .container .bottom .burger {
 @media screen and (max-width: 1200px) and (max-width: 550px) {
   .our-discount .container .middle .left {
     height: 518px;
+    padding: 15px;
   }
 }
 .our-discount .container .middle .left h2 {
@@ -583,6 +584,13 @@ header .container .bottom .burger {
   border: none;
   font-weight: 700;
   margin-top: 20px;
+  transition: all 300ms ease;
+}
+.our-discount .container .middle .left button:active {
+  scale: 1.1;
+}
+.our-discount .container .middle .left button:hover {
+  opacity: 80%;
 }
 .our-discount .container .middle .left img {
   position: absolute;
@@ -642,6 +650,13 @@ header .container .bottom .burger {
   background-color: #ffffff;
   color: #3bb96d;
   margin-top: 48px;
+  transition: all 300ms ease;
+}
+.our-discount .container .middle .right .item1 button:active {
+  scale: 1.1;
+}
+.our-discount .container .middle .right .item1 button:hover {
+  opacity: 80%;
 }
 .our-discount .container .middle .right .item1 img {
   position: absolute;
