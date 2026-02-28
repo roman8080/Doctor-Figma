@@ -828,67 +828,131 @@ header {
 .our-evidence {
   padding: 130px 0;
 
-  h1 {
-    font-size: 40px;
-    font-weight: 700;
-    color: #000000;
-    margin: 40px 140px;
-  }
   .container {
     max-width: $container_width;
     padding: 0 15px;
     margin: 0 auto;
-    background-color: #f4f6fa;
-    padding: 30px 20px 0;
-
-    .left {
-      .li1 {
-        width: 485px;
-        height: 53px;
-        // border: solid red;
-        display: flex;
-        background-color: #ffffff;
-        align-items: center;
-        padding: 5px;
-        border-bottom-left-radius: 10px;
-        border-top-left-radius: 10px;
-      }
-      ul {
-        display: flex;
-        flex-direction: column;
-        gap: 34px;
-        li {
-          list-style: none;
-          font-weight: 400;
-          color: #0d233b;
-
-          span {
-            font-size: 22px;
-            font-weight: 700;
-            color: #0d233b;
-            margin-right: 10px;
-          }
-        }
-      }
+    h1 {
+      font-size: 40px;
+      font-weight: 700;
+      color: #000000;
+      // margin: 40px 140px;
     }
-    .right {
-      .top {
-        h2 {
-        }
-        p {
-        }
+    .middle {
+      background-color: #f4f6fa;
+      padding: 30px 20px;
+      display: flex;
+      align-items: flex-start;
+      margin-top: 40px;
+      border-radius: 10px;
+      @include my_media(1100px) {
+        flex-direction: column-reverse;
+        gap: 20px;
       }
-      .bottom {
-        .left {
-          .text {
-            h1 {
-            }
-            p {
+      @include my_media(560px) {
+        padding: 20px 10px;
+      }
+      .left {
+        .li1 {
+          width: 485px;
+          height: 53px;
+          display: flex;
+          background-color: #ffffff;
+          align-items: center;
+          border-bottom-left-radius: 10px;
+          border-top-left-radius: 10px;
+          @include my_media(1100px) {
+            display: none;
+          }
+        }
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          li {
+            list-style: none;
+            font-weight: 400;
+            color: #0d233b;
+            padding: 10px;
+
+            span {
+              font-size: 22px;
+              font-weight: 700;
+              color: #0d233b;
+              margin-right: 10px;
             }
           }
         }
-        .right {
-          img {
+      }
+      .right {
+        background-color: white;
+        padding: 11px 21px;
+        border-radius: 10px;
+        border-top-left-radius: 0px;
+        .top {
+          .li1 {
+            display: none;
+            // width: 485px;
+            height: 53px;
+            background-color: #ffffff;
+            align-items: center;
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+            @include my_media(1100px) {
+              display: block;
+            }
+          }
+          h2 {
+            font-size: 30px;
+            font-weight: 600;
+            color: #0d233b;
+          }
+          .br {
+            width: 80px;
+            height: 0px;
+            border: 2px solid #3bb96d;
+            margin: 15px 0;
+          }
+          p {
+            line-height: 150%;
+            color: #686868;
+            text-align: justify;
+            font-weight: 300;
+            width: 100%;
+          }
+        }
+        .bottom {
+          display: flex;
+          margin-top: 18px;
+          justify-content: space-between;
+          @include my_media(560px) {
+            flex-direction: column;
+          }
+          .left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            .text {
+              h1 {
+                font-size: 50px;
+                font-weight: 700;
+                color: #3bb96d;
+              }
+              p {
+                font-size: 20px;
+                font-weight: 600;
+                color: #717992;
+                margin-top: 5px;
+              }
+            }
+          }
+          .right2 {
+            max-width: 391px;
+            height: 342px;
+            img {
+              width: 100%;
+              height: 100%;
+            }
           }
         }
       }
