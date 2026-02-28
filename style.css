@@ -246,6 +246,16 @@ header .container .bottom .burger {
 .our-job {
   padding-bottom: 130px;
 }
+@media screen and (max-width: 770px) {
+  .our-job {
+    padding: 100px 0;
+  }
+}
+@media screen and (max-width: 460px) {
+  .our-job {
+    padding: 80px 0;
+  }
+}
 .our-job .container {
   max-width: 1166px;
   padding: 0 15px;
@@ -363,6 +373,16 @@ header .container .bottom .burger {
 .our-specialists {
   background-color: #f1f5f8;
   padding: 130px 0;
+}
+@media screen and (max-width: 770px) {
+  .our-specialists {
+    padding: 100px 0;
+  }
+}
+@media screen and (max-width: 460px) {
+  .our-specialists {
+    padding: 80px 0;
+  }
 }
 .our-specialists .container {
   max-width: 1166px;
@@ -510,6 +530,16 @@ header .container .bottom .burger {
 
 .our-discount {
   padding: 130px 0;
+}
+@media screen and (max-width: 770px) {
+  .our-discount {
+    padding: 100px 0;
+  }
+}
+@media screen and (max-width: 460px) {
+  .our-discount {
+    padding: 80px 0;
+  }
 }
 .our-discount .container {
   max-width: 1166px;
@@ -684,6 +714,16 @@ header .container .bottom .burger {
   background-color: #f1f5f8;
   padding: 130px 0;
 }
+@media screen and (max-width: 770px) {
+  .stat {
+    padding: 100px 0;
+  }
+}
+@media screen and (max-width: 460px) {
+  .stat {
+    padding: 40px 0 120px;
+  }
+}
 .stat .container {
   max-width: 1166px;
   padding: 0 15px;
@@ -823,6 +863,16 @@ header .container .bottom .burger {
 .our-equipment {
   padding: 130px 0;
 }
+@media screen and (max-width: 770px) {
+  .our-equipment {
+    padding: 100px 0;
+  }
+}
+@media screen and (max-width: 460px) {
+  .our-equipment {
+    padding: 80px 0;
+  }
+}
 .our-equipment .container {
   max-width: 1166px;
   padding: 0 15px;
@@ -884,6 +934,16 @@ header .container .bottom .burger {
 }
 .our-evidence {
   padding: 130px 0;
+}
+@media screen and (max-width: 770px) {
+  .our-evidence {
+    padding: 100px 0;
+  }
+}
+@media screen and (max-width: 460px) {
+  .our-evidence {
+    padding: 80px 0;
+  }
 }
 .our-evidence .container {
   max-width: 1166px;
@@ -1015,4 +1075,54 @@ header .container .bottom .burger {
 .our-evidence .container .middle .right .bottom .right2 img {
   width: 100%;
   height: 100%;
+}
+
+.our-partner {
+  padding-bottom: 130px;
+}
+@media screen and (max-width: 770px) {
+  .our-partner {
+    padding: 100px 0;
+  }
+}
+@media screen and (max-width: 460px) {
+  .our-partner {
+    padding: 40px 0;
+  }
+}
+.our-partner .container {
+  max-width: 1166px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.our-partner .container h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #000000;
+}
+.our-partner .container .grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+@media screen and (max-width: 850px) {
+  .our-partner .container .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 570px) {
+  .our-partner .container .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.our-partner .container .grid .box {
+  width: 173px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.our-partner .container .grid .box:hover {
+  box-shadow: 0 4px 20px 0 rgba(52, 52, 52, 0.1411764706);
 }/*# sourceMappingURL=style.css.map */

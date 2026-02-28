@@ -243,6 +243,12 @@ header {
 // OUR JOB
 .our-job {
   padding-bottom: 130px;
+  @include my_media(770px) {
+    padding: 100px 0;
+  }
+  @include my_media(460px) {
+    padding: 80px 0;
+  }
   .container {
     max-width: $container_width;
     padding: 0 15px;
@@ -340,6 +346,12 @@ header {
 .our-specialists {
   background-color: #f1f5f8;
   padding: 130px 0;
+  @include my_media(770px) {
+    padding: 100px 0;
+  }
+  @include my_media(460px) {
+    padding: 80px 0;
+  }
   .container {
     max-width: $container_width;
     padding: 0 15px;
@@ -461,6 +473,12 @@ header {
 // OUR DISCOUNT
 .our-discount {
   padding: 130px 0;
+  @include my_media(770px) {
+    padding: 100px 0;
+  }
+  @include my_media(460px) {
+    padding: 80px 0;
+  }
   .container {
     max-width: $container_width;
     padding: 0 15px;
@@ -615,6 +633,12 @@ header {
 .stat {
   background-color: #f1f5f8;
   padding: 130px 0;
+  @include my_media(770px) {
+    padding: 100px 0;
+  }
+  @include my_media(460px) {
+    padding: 40px 0 120px;
+  }
   .container {
     max-width: $container_width;
     padding: 0 15px;
@@ -757,6 +781,12 @@ header {
 // OUR EQUIPMENT
 .our-equipment {
   padding: 130px 0;
+  @include my_media(770px) {
+    padding: 100px 0;
+  }
+  @include my_media(460px) {
+    padding: 80px 0;
+  }
   .container {
     max-width: $container_width;
     padding: 0 15px;
@@ -827,7 +857,12 @@ header {
 // OUR EVIDENCE
 .our-evidence {
   padding: 130px 0;
-
+  @include my_media(770px) {
+    padding: 100px 0;
+  }
+  @include my_media(460px) {
+    padding: 80px 0;
+  }
   .container {
     max-width: $container_width;
     padding: 0 15px;
@@ -955,6 +990,52 @@ header {
             }
           }
         }
+      }
+    }
+  }
+}
+
+// OUR PARTNER
+.our-partner {
+  padding-bottom: 130px;
+  @include my_media(770px) {
+    padding: 100px 0;
+  }
+  @include my_media(460px) {
+    padding: 40px 0;
+  }
+  .container {
+    max-width: $container_width;
+    padding: 0 15px;
+    margin: 0 auto;
+    h1 {
+      font-size: 40px;
+      font-weight: 700;
+      color: #000000;
+    }
+    .grid {
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      @include my_media(850px) {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      @include my_media(570px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .box {
+        width: 173px;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        &:hover {
+          box-shadow: 0 4px 20px 0 #34343424;
+        }
+      }
+
+      img {
       }
     }
   }
