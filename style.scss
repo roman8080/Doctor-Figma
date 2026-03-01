@@ -1040,3 +1040,44 @@ header {
     }
   }
 }
+
+// OUR LICENSE
+.our-license {
+  .container {
+    max-width: 1440px;
+    padding: 0 15px;
+    margin: 0 auto;
+    background-color: #f1f5f8;
+    padding: 130px 150px;
+    @include my_media(1300px) {
+      padding: 45px 100px;
+    }
+
+    .cards {
+      display: flex;
+      gap: 20px;
+      width: 100%;
+    }
+    h1 {
+      font-size: 40px;
+      font-weight: 700;
+      color: #000000;
+    }
+    .card {
+      margin-top: 53px;
+      max-width: 600px;
+      width: 100%;
+      .img4 {
+        @include my_media(1300px) {
+          display: none;
+          padding: 45px 100px;
+        }
+      }
+      .img3 {
+        @include my_media(1000px) {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -1125,4 +1125,42 @@ header .container .bottom .burger {
 }
 .our-partner .container .grid .box:hover {
   box-shadow: 0 4px 20px 0 rgba(52, 52, 52, 0.1411764706);
+}
+.our-license .container {
+  max-width: 1440px;
+  padding: 0 15px;
+  margin: 0 auto;
+  background-color: #f1f5f8;
+  padding: 130px 150px;
+}
+@media screen and (max-width: 1300px) {
+  .our-license .container {
+    padding: 45px 100px;
+  }
+}
+.our-license .container .cards {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+.our-license .container h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #000000;
+}
+.our-license .container .card {
+  margin-top: 53px;
+  max-width: 600px;
+  width: 100%;
+}
+@media screen and (max-width: 1300px) {
+  .our-license .container .card .img4 {
+    display: none;
+    padding: 45px 100px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .our-license .container .card .img3 {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
