@@ -1043,39 +1043,201 @@ header {
 
 // OUR LICENSE
 .our-license {
+  background-color: #f1f5f8;
+  padding: 130px 0;
+  @include my_media(800px) {
+    padding: 100px 0;
+  }
+  @include my_media(600px) {
+    padding: 80px 0;
+  }
   .container {
     max-width: 1440px;
     padding: 0 15px;
     margin: 0 auto;
-    background-color: #f1f5f8;
-    padding: 130px 150px;
-    @include my_media(1300px) {
-      padding: 45px 100px;
-    }
 
-    .cards {
-      display: flex;
-      gap: 20px;
-      width: 100%;
-    }
     h1 {
       font-size: 40px;
       font-weight: 700;
       color: #000000;
     }
-    .card {
-      margin-top: 53px;
-      max-width: 600px;
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 391px;
+      gap: 20px;
       width: 100%;
-      .img4 {
-        @include my_media(1300px) {
-          display: none;
-          padding: 45px 100px;
+      margin-top: 53px;
+
+      @include my_media(800px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      @include my_media(600px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .card {
+        // max-width: 600px;
+        width: 100%;
+        height: 100%;
+        // border: 1px solid red;
+        img {
+          width: 100%;
+          height: 100%;
         }
       }
-      .img3 {
-        @include my_media(1000px) {
+
+      .img4 {
+        @include my_media(800px) {
           display: none;
+        }
+        @include my_media(600px) {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// OUR CONTACTS
+.our-contacts {
+  .container {
+    @include my_media(600px) {
+      flex-direction: column;
+    }
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    .left {
+      background-color: #272727;
+      padding: 110px 110px;
+      width: 50%;
+      @include my_media(800px) {
+        padding: 110px 30px;
+      }
+      @include my_media(600px) {
+        padding: 60px 30px;
+        width: 100%;
+      }
+
+      h1 {
+        font-size: 40px;
+        font-weight: 700;
+        color: #ffffff;
+      }
+    }
+    p {
+      color: #ffffff;
+      margin-top: 30px;
+    }
+    h4 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #ffffff;
+      margin-top: 8px;
+    }
+    button {
+      width: 220px;
+      height: 48px;
+      border-radius: 30px;
+      background: $button_gradient;
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 700;
+      margin-top: 30px;
+      border: none;
+      @include btn_action();
+    }
+    .right {
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+// FOOTER
+footer {
+  background-color: #279a59;
+  padding: 50px 0;
+  .container {
+    max-width: $container_width;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    @include my_media(600px) {
+      flex-direction: column;
+      gap: 30px;
+    }
+    .left {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      @include my_media(600px) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      img {
+      }
+      .item {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        @include my_media(600px) {
+          flex-direction: row;
+        }
+      }
+      p {
+        color: #ffffff;
+        margin-top: 12px;
+      }
+      h4 {
+        font-weight: 600;
+        color: #ffffff;
+        margin-top: 8px;
+      }
+    }
+    .right {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 48px;
+
+      @include my_media(800px) {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px;
+        padding-right: 70px;
+      }
+      @include my_media(600px) {
+        padding-right: 0;
+      }
+      .text {
+        max-width: 176px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        h3 {
+          font-size: 18px;
+          font-weight: 700;
+          color: #ffffff;
+        }
+        ul {
+          list-style: none;
+          margin-top: 15px;
+          display: flex;
+          flex-direction: column;
+          gap: 7px;
+          li {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #ffffff;
+            line-height: 140%;
+            font-weight: 400;
+          }
         }
       }
     }
